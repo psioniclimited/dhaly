@@ -84,6 +84,10 @@ h1, h2, h3, h4, h5, h6 {
   border-bottom: none;
 }
 
+#logo, #primary-menu {
+  z-index: 20000;
+}
+
 #header.transparent-header.full-header #logo {
   border-right-color: transparent;
   padding-top: 30px;
@@ -166,8 +170,8 @@ h1, h2, h3, h4, h5, h6 {
   background: #bb3939;
   top: 0;
   right: 0;
-  width: 350px;
-  height: 550px;
+  width: 335px;
+  height: 435px;
   opacity: 0;
   visibility: hidden;
   transform-origin: top right;
@@ -452,6 +456,7 @@ body:not(.dark) #header:not(.dark) #header-wrap:not(.dark) #primary-menu > div >
   .nav-overlay.open {
     height: 100vh;
     width: 100vw;
+    z-index: 25000;
   }
 
   .overlay-logo-holder {
@@ -485,6 +490,7 @@ body:not(.dark) #header:not(.dark) #header-wrap:not(.dark) #primary-menu > div >
     width: 32px;
     right: 2rem;
     top: 0rem;
+    z-index: 25001;
   }
 
   #logo {
@@ -501,12 +507,65 @@ body:not(.dark) #header:not(.dark) #header-wrap:not(.dark) #primary-menu > div >
   .mobile-dhaly-logo {
     display: inherit !important;
   }
+  .mobile-dhaly-logo img {
+    -webkit-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    -moz-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+
+  .cover-section-top-border, .cover-section-right-border {
+    display: none;
+  }
+
+  .overlay-menu {
+    top: 0%;
+    -webkit-transform: translateY(0%);
+    -ms-transform: translateY(0%);
+    -moz-transform: translateY(0%);
+    transform: translateY(0%);
+  }
 }
 #dhaly-cover-section {
   position: relative;
   width: 100%;
   height: 100vh;
   overflow: hidden;
+}
+
+.dhaly-cover-content-wrap {
+  height: 100%;
+}
+.dhaly-cover-content-wrap .dhaly-container-fluid {
+  height: 100%;
+}
+
+.cover-section-top-border {
+  position: absolute;
+  width: 50%;
+  height: 18px;
+  top: 0;
+  right: 0;
+  background: #bb3939;
+  -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 5% 100%);
+  -o-clip-path: polygon(0 0, 100% 0%, 100% 100%, 5% 100%);
+  -moz-clip-path: polygon(0 0, 100% 0%, 100% 100%, 5% 100%);
+  -ms-clip-path: polygon(0 0, 100% 0%, 100% 100%, 5% 100%);
+  clip-path: polygon(0 0, 100% 0%, 100% 100%, 5% 100%);
+}
+
+.cover-section-right-border {
+  position: absolute;
+  width: 18px;
+  height: 458px;
+  top: 0;
+  right: 0;
+  background: #bb3939;
+  -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 95%);
+  -o-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 95%);
+  -moz-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 95%);
+  -ms-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 95%);
+  clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 95%);
 }
 
 /*# sourceMappingURL=custom.css.map */
