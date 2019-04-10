@@ -340,11 +340,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (min-width: 768px) and (max-width: 1199px) {
-  .nav-overlay.open {
-    height: 100vh;
-    width: 100vw;
-  }
-
   .overlay-logo {
     width: 100%;
   }
@@ -360,39 +355,6 @@ h1, h2, h3, h4, h5, h6 {
   .nav-overlay ul li a {
     font-size: 21px;
     line-height: 41px;
-  }
-}
-@media (max-width: 767px) {
-  .nav-overlay.open {
-    height: 100vh;
-    width: 100vw;
-  }
-
-  .overlay-logo-holder {
-    position: relative;
-    left: 50%;
-    width: 17rem;
-    -webkit-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    -moz-transform: translateX(-50%);
-    transform: translateX(-50%);
-  }
-
-  .overlay-logo {
-    width: 100%;
-  }
-
-  .nav-overlay ul {
-    text-align: center;
-  }
-
-  .nav-overlay ul li {
-    min-height: 5vh;
-  }
-
-  .nav-overlay ul li a {
-    font-size: 1.7rem;
-    line-height: 4rem;
   }
 }
 @media (max-width: 991px) {
@@ -455,13 +417,18 @@ body:not(.dark) #header:not(.dark) #header-wrap:not(.dark) #primary-menu > div >
   }
 
   #logo {
-    display: none;
+    position: fixed;
+    float: left;
+    -webkit-transform: scale(0.6);
+    -ms-transform: scale(0.6);
+    -moz-transform: scale(0.6);
+    transform: scale(0.6);
   }
 
   .hamburger-icons-container {
     width: 32px;
-    right: 1rem;
-    top: 0rem;
+    right: 5rem;
+    top: 2rem;
   }
 
   .hamburger-icons-container div {
@@ -479,6 +446,60 @@ body:not(.dark) #header:not(.dark) #header-wrap:not(.dark) #primary-menu > div >
 
   .nav-overlay ul {
     top: 2rem;
+  }
+}
+@media (max-width: 767px) {
+  .nav-overlay.open {
+    height: 100vh;
+    width: 100vw;
+  }
+
+  .overlay-logo-holder {
+    position: relative;
+    left: 50%;
+    width: 17rem;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+
+  .overlay-logo {
+    width: 100%;
+  }
+
+  .nav-overlay ul {
+    text-align: center;
+  }
+
+  .nav-overlay ul li {
+    min-height: 5vh;
+  }
+
+  .nav-overlay ul li a {
+    font-size: 1.7rem;
+    line-height: 4rem;
+  }
+
+  .hamburger-icons-container {
+    width: 32px;
+    right: 2rem;
+    top: 0rem;
+  }
+
+  #logo {
+    position: fixed;
+    float: none;
+    -webkit-transform: scale(0.6);
+    -ms-transform: scale(0.6);
+    -moz-transform: scale(0.6);
+    transform: scale(0.4);
+    left: -45px;
+    top: -18px;
+  }
+
+  .mobile-dhaly-logo {
+    display: inherit !important;
   }
 }
 #dhaly-cover-section {
