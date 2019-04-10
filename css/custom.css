@@ -577,11 +577,11 @@ body:not(.dark) #header:not(.dark) #header-wrap:not(.dark) #primary-menu > div >
   left: 50%;
   background: #bb3939;
   z-index: 1;
-  -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 5% 100%);
-  -o-clip-path: polygon(0 0, 100% 0%, 100% 100%, 5% 100%);
-  -moz-clip-path: polygon(0 0, 100% 0%, 100% 100%, 5% 100%);
-  -ms-clip-path: polygon(0 0, 100% 0%, 100% 100%, 5% 100%);
-  clip-path: polygon(0 0, 100% 0%, 100% 100%, 5% 100%);
+  -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 2% 100%);
+  -o-clip-path: polygon(0 0, 100% 0%, 100% 100%, 2% 100%);
+  -moz-clip-path: polygon(0 0, 100% 0%, 100% 100%, 2% 100%);
+  -ms-clip-path: polygon(0 0, 100% 0%, 100% 100%, 2% 100%);
+  clip-path: polygon(0 0, 100% 0%, 100% 100%, 2% 100%);
 }
 
 .cover-section-top-border.active {
@@ -893,7 +893,7 @@ body:not(.dark) #header:not(.dark) #header-wrap:not(.dark) #primary-menu > div >
 .dhaly-cover-rightmost-crane img {
   position: absolute;
   right: 0;
-  bottom: 0%;
+  bottom: -3%;
   z-index: 1;
   -webkit-transform: translate(-50%, -100%);
   -ms-transform: translate(-50%, -100%);
@@ -939,17 +939,35 @@ body:not(.dark) #header:not(.dark) #header-wrap:not(.dark) #primary-menu > div >
 .dhaly-cover-lefttmost-crane img {
   position: absolute;
   left: 5%;
-  bottom: 0%;
+  bottom: -1%;
   z-index: 1;
   -webkit-transform: translate(-50%, -100%);
   -ms-transform: translate(-50%, -100%);
   -moz-transform: translate(-50%, -100%);
   transform: translate(-50%, -100%);
-  -webkit-animation: leftToRight 45s infinite;
-  -moz-animation: leftToRight 45s infinite;
-  -ms-animation: leftToRight 45s infinite;
-  -o-animation: leftToRight 45s infinite;
-  animation: leftToRight 45s infinite;
+  -webkit-animation: leftToRight 55s infinite 1s;
+  -moz-animation: leftToRight 55s infinite 1s;
+  -ms-animation: leftToRight 55s infinite 1s;
+  -o-animation: leftToRight 55s infinite 1s;
+  animation: leftToRight 55s infinite 1s;
+}
+
+.dhaly-cover-gentleman {
+  position: absolute;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+}
+.dhaly-cover-gentleman img {
+  position: absolute;
+  left: 10%;
+  bottom: 0%;
+  z-index: 3;
+  -webkit-transform: translate(0%, 0%);
+  -ms-transform: translate(0%, 0%);
+  -moz-transform: translate(0%, 0%);
+  transform: translate(0%, 0%);
 }
 
 @-webkit-keyframes rightToLeft {
@@ -1051,6 +1069,39 @@ body:not(.dark) #header:not(.dark) #header-wrap:not(.dark) #primary-menu > div >
     right: 20%;
   }
 }
+@-webkit-keyframes rightToLeft02 {
+  0% {
+    right: -10%;
+  }
+  50% {
+    right: 10%;
+  }
+  100% {
+    right: -10%;
+  }
+}
+@-moz-keyframes rightToLeft02 {
+  0% {
+    right: -10%;
+  }
+  50% {
+    right: 10%;
+  }
+  100% {
+    right: -10%;
+  }
+}
+@keyframes rightToLeft02 {
+  0% {
+    right: -10%;
+  }
+  50% {
+    right: 10%;
+  }
+  100% {
+    right: -10%;
+  }
+}
 @media (min-width: 1200px) and (max-width: 1799px) {
   .cloudsBGD1 {
     background-size: 70%;
@@ -1060,17 +1111,66 @@ body:not(.dark) #header:not(.dark) #header-wrap:not(.dark) #primary-menu > div >
     top: 10%;
     background-size: 70%;
   }
+
+  .dhaly-cover-gentleman img {
+    height: 600px;
+  }
+
+  .dhaly-cover-second-rightmost-crane img {
+    bottom: -10%;
+  }
+
+  .dhaly-cover-rightmost-crane img {
+    bottom: -4%;
+  }
 }
 @media (min-width: 768px) and (max-width: 1199px) {
   .cloudsBGDBox {
     top: 30%;
     height: 18%;
   }
+
+  .dhaly-cover-gentleman img {
+    left: 0%;
+    bottom: 0%;
+    height: 600px;
+  }
+
+  .dhaly-cover-lefttmost-crane,
+.dhaly-cover-second-rightmost-crane {
+    display: none;
+  }
+
+  .dhaly-cover-rightmost-crane img {
+    right: -5%;
+    -webkit-animation: rightToLeft02 15s infinite;
+    -moz-animation: rightToLeft02 15s infinite;
+    -ms-animation: rightToLeft02 15s infinite;
+    -o-animation: rightToLeft02 15s infinite;
+    animation: rightToLeft02 15s infinite;
+  }
 }
 @media (max-width: 767px) {
   .cloudsBGDBox {
     top: 30%;
     height: 20%;
+  }
+
+  .dhaly-cover-gentleman img {
+    left: 0%;
+    bottom: 0%;
+  }
+
+  .dhaly-cover-rightmost-crane, .dhaly-cover-second-rightmost-crane {
+    display: none;
+  }
+
+  .dhaly-cover-lefttmost-crane img {
+    -webkit-animation: leftToRight 10s infinite;
+    -moz-animation: leftToRight 10s infinite;
+    -ms-animation: leftToRight 10s infinite;
+    -o-animation: leftToRight 10s infinite;
+    animation: leftToRight 10s infinite;
   }
 }
 
