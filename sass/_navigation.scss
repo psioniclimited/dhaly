@@ -373,6 +373,7 @@ $general-color: #00ade3;
   .nav-overlay ul {
     top: 2rem;
   }
+
 }
 
 @media (max-width: 767px){
@@ -428,5 +429,9 @@ $general-color: #00ade3;
   .overlay-menu {
     top: 0%;
     @include transform(translateY(-0%));
+  }
+  .cool-link:hover::after {
+    width: 0;
+    transform-origin: center;
   }
 }
