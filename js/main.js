@@ -5,6 +5,7 @@ $(document).ready(function () {
             clearInterval(chkReadyState);
             $('.cover-section-top-border').addClass('active');
             $('.cover-section-right-border').addClass('active');
+
             // finally your page is loaded.
         }
     }, 100);
@@ -65,7 +66,11 @@ $(document).ready(function () {
                 '-moz-animation-name': 'cloudsBGD2',
                 'animation-name': 'cloudsBGD2'
             });
-
+            $('.dhaly-cover-second-rightmost-crane, .dhaly-cover-rightmost-crane').css({
+                '-webkit-animation-name': 'cloudsBGD2',
+                '-moz-animation-name': 'cloudsBGD2',
+                'animation-name': 'cloudsBGD2'
+            });
         },10);
     });
     //Detect Window Size ends
