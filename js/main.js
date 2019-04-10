@@ -1,4 +1,13 @@
 $(document).ready(function () {
+    var chkReadyState = setInterval(function() {
+        if (document.readyState == "complete") {
+            // clear the interval
+            clearInterval(chkReadyState);
+            $('.cover-section-top-border').addClass('active');
+            $('.cover-section-right-border').addClass('active');
+            // finally your page is loaded.
+        }
+    }, 100);
     $(window).scroll(function () {
         var findStickyHeader = $( '#header' ).hasClass( 'sticky-header' );
         if(findStickyHeader) {

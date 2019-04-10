@@ -247,7 +247,27 @@ $general-color: #00ade3;
 .custom-overlay-main-menu-col-3.open {
   display: none;
 }
+.cool-link {
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  transform-origin: center;
+}
 
+.cool-link::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #fff;
+  @include transition(width .3s);
+}
+
+.cool-link:hover::after {
+  width: 100%;
+  transform-origin: center;
+  //transition: width .3s;
+}
 @media (min-width: 1921px) {
 
 }
