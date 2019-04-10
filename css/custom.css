@@ -36,6 +36,23 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Montserrat";
 }
 
+.dhaly-aboutus-text-header {
+  font-size: 42px;
+  font-weight: 700 !important;
+  letter-spacing: 0px !important;
+  color: #000 !important;
+  text-transform: capitalize !important;
+  max-width: 100%;
+}
+
+.dhaly-aboutus-text-content {
+  font-size: 1.75rem;
+  font-weight: 400 !important;
+  line-height: 31px;
+  letter-spacing: 0px !important;
+  max-width: 100% !important;
+}
+
 .custom-loader {
   position: absolute;
   top: 50%;
@@ -1172,6 +1189,67 @@ body:not(.dark) #header:not(.dark) #header-wrap:not(.dark) #primary-menu > div >
     -o-animation: leftToRight 10s infinite;
     animation: leftToRight 10s infinite;
   }
+}
+#dhaly-aboutus-ourwork-section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: #221f1f;
+}
+#dhaly-aboutus-ourwork-section .dhaly-aboutus-ourwork-content-wrap {
+  width: 100%;
+  height: 100%;
+}
+#dhaly-aboutus-ourwork-section .dhaly-aboutus-ourwork-content-wrap .dhaly-aboutus-ourwork-container {
+  height: 100%;
+}
+
+.dhaly-aboutus-row {
+  background: #bb3939;
+}
+
+.dhaly-aboutus-col06 {
+  padding: 3rem;
+}
+
+.dhaly-aboutus-text-holder {
+  padding-right: 2rem;
+  padding-left: 4rem;
+  padding-bottom: 1rem;
+}
+
+.dhaly-aboutus-img-holder {
+  position: absolute;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+}
+.dhaly-aboutus-img-holder img {
+  position: absolute;
+  left: 0;
+  top: -15%;
+  z-index: 1;
+  -webkit-transform: translate(0%, 0%);
+  -ms-transform: translate(0%, 0%);
+  -moz-transform: translate(0%, 0%);
+  transform: translate(0%, 0%);
+}
+
+.dhaly-aboutus-text-header {
+  position: relative;
+  width: 100%;
+}
+
+.dhaly-aboutus-text-header {
+  color: #fff !important;
+  border-bottom: 2px solid #fff;
+  margin-bottom: 20px;
+  padding-bottom: 1rem;
+}
+
+.dhaly-aboutus-text-content {
+  color: #fff !important;
 }
 
 /*# sourceMappingURL=custom.css.map */
