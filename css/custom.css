@@ -36,7 +36,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Montserrat";
 }
 
-.dhaly-aboutus-text-header {
+.dhaly-ourwork-header-div h1, .dhaly-aboutus-text-header {
   font-size: 42px;
   font-weight: 700 !important;
   letter-spacing: 0px !important;
@@ -1204,6 +1204,11 @@ body:not(.dark) #header:not(.dark) #header-wrap:not(.dark) #primary-menu > div >
   height: 100%;
 }
 
+.dhaly-aboutus-container {
+  position: relative;
+  z-index: 1;
+}
+
 .dhaly-aboutus-row {
   background: #bb3939;
 }
@@ -1250,6 +1255,135 @@ body:not(.dark) #header:not(.dark) #header-wrap:not(.dark) #primary-menu > div >
 
 .dhaly-aboutus-text-content {
   color: #fff !important;
+}
+
+.dhaly-aboutus-bottom-right-icon {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  cursor: pointer;
+}
+.dhaly-aboutus-bottom-right-icon img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.dhaly-aboutus-background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+.dhaly-aboutus-background img {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.dhaly-ourwork-row {
+  position: relative;
+  margin-top: 80px;
+}
+
+.dhaly-ourwork-header-col-12 {
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.dhaly-ourwork-header-div {
+  position: relative;
+  text-align: center;
+}
+.dhaly-ourwork-header-div h1 {
+  margin-bottom: 10px;
+}
+.dhaly-ourwork-header-div .dhaly-ourwork-downward-arrow {
+  position: relative;
+  cursor: pointer;
+  top: 0px;
+  -webkit-animation: backAndForth 0.9s infinite;
+  -moz-animation: backAndForth 0.9s infinite;
+  -ms-animation: backAndForth 0.9s infinite;
+  -o-animation: backAndForth 0.9s infinite;
+  animation: backAndForth 0.9s infinite;
+}
+
+@-webkit-keyframes backAndForth {
+  0% {
+    top: 0px;
+  }
+  50% {
+    top: 5px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+@-moz-keyframes backAndForth {
+  0% {
+    top: 0px;
+  }
+  50% {
+    top: 5px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+@keyframes backAndForth {
+  0% {
+    top: 0px;
+  }
+  50% {
+    top: 5px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+.dhaly-ourwork-logo-holder {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  cursor: pointer;
+  -webkit-transform: all 0.3s ease-in-out;
+  -ms-transform: all 0.3s ease-in-out;
+  -moz-transform: all 0.3s ease-in-out;
+  transform: all 0.3s ease-in-out;
+}
+.dhaly-ourwork-logo-holder img {
+  position: absolute;
+  z-index: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.dhaly-ourwork-logo-holder .dhaly-ourwork-img {
+  z-index: 1;
+  opacity: 1;
+}
+.dhaly-ourwork-logo-holder .dhaly-ourwork-gif {
+  z-index: 0;
+  opacity: 0;
+}
+
+.dhaly-ourwork-logo-holder:hover .dhaly-ourwork-img {
+  z-index: 0;
+  opacity: 0;
+}
+.dhaly-ourwork-logo-holder:hover .dhaly-ourwork-gif {
+  z-index: 2;
+  opacity: 1;
 }
 
 /*# sourceMappingURL=custom.css.map */

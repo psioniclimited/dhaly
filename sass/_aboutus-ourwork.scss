@@ -38,6 +38,10 @@ $general-red-color : #bb3939;
     }
   }
 }
+.dhaly-aboutus-container {
+  position: relative;
+  z-index: 1;
+}
 .dhaly-aboutus-row {
   //padding: 5rem;
   background: $general-red-color;
@@ -78,6 +82,122 @@ $general-red-color : #bb3939;
 .dhaly-aboutus-text-content {
   @extend %paragraph-class;
   color: #fff !important;
+}
+.dhaly-aboutus-bottom-right-icon {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  cursor: pointer;
+  img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+  }
+}
+.dhaly-aboutus-background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+  }
+}
+
+.dhaly-ourwork-row {
+  position: relative;
+  margin-top: 80px;
+}
+.dhaly-ourwork-header-col-12 {
+  position: relative;
+  margin-bottom: 50px;
+}
+.dhaly-ourwork-header-div {
+  position: relative;
+  text-align: center;
+  h1 {
+    @extend %header-class;
+    margin-bottom: 10px;
+  }
+  .dhaly-ourwork-downward-arrow {
+    position: relative;
+    cursor: pointer;
+    top: 0px;
+    @include animation(backAndForth 0.9s infinite);
+  }
+}
+@-webkit-keyframes backAndForth {
+  0% {
+       top: 0px;
+     }
+  50% {
+    top: 5px
+  }
+  100% {
+    top: 0px;
+  }
+}
+@-moz-keyframes backAndForth {
+  0% {
+    top: 0px;
+  }
+  50% {
+    top: 5px
+  }
+  100% {
+    top: 0px;
+  }
+}
+@keyframes backAndForth {
+  0% {
+    top: 0px;
+  }
+  50% {
+    top: 5px
+  }
+  100% {
+    top: 0px;
+  }
+}
+.dhaly-ourwork-logo-holder {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  cursor: pointer;
+  @include transform(all 0.3s ease-in-out);
+  img {
+    position: absolute;
+    z-index: 0;
+    @include transition(all 0.3s ease-in-out);
+  }
+  .dhaly-ourwork-img {
+    z-index: 1;
+    opacity: 1;
+  }
+  .dhaly-ourwork-gif {
+    z-index: 0;
+    opacity: 0;
+  }
+}
+.dhaly-ourwork-logo-holder:hover {
+  .dhaly-ourwork-img {
+    z-index: 0;
+    opacity: 0;
+  }
+  .dhaly-ourwork-gif {
+    z-index: 2;
+    opacity: 1;
+  }
 }
 @media (min-width: 1921px){
 
