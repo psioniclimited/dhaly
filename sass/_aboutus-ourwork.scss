@@ -38,7 +38,7 @@ $general-red-color : #bb3939;
     }
   }
 }
-.dhaly-aboutus-container {
+.dhaly-aboutus-container, .dhaly-ourwork-container {
   position: relative;
   z-index: 1;
 }
@@ -135,6 +135,10 @@ $general-red-color : #bb3939;
     @include animation(backAndForth 0.9s infinite);
   }
 }
+.dhaly-ourwork-downward-arrow:hover {
+  animation-play-state: paused;
+}
+
 @-webkit-keyframes backAndForth {
   0% {
        top: 0px;

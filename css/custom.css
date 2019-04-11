@@ -1204,7 +1204,7 @@ body:not(.dark) #header:not(.dark) #header-wrap:not(.dark) #primary-menu > div >
   height: 100%;
 }
 
-.dhaly-aboutus-container {
+.dhaly-aboutus-container, .dhaly-ourwork-container {
   position: relative;
   z-index: 1;
 }
@@ -1314,6 +1314,10 @@ body:not(.dark) #header:not(.dark) #header-wrap:not(.dark) #primary-menu > div >
   -ms-animation: backAndForth 0.9s infinite;
   -o-animation: backAndForth 0.9s infinite;
   animation: backAndForth 0.9s infinite;
+}
+
+.dhaly-ourwork-downward-arrow:hover {
+  animation-play-state: paused;
 }
 
 @-webkit-keyframes backAndForth {
