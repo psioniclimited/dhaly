@@ -5,9 +5,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/custom.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/custom.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/css/custom.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sass/_aboutus-ourwork.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/_aboutus-ourwork.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sass/_common.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/_common.scss" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -42,8 +40,8 @@
       <file leaf-file-name="_aboutus-ourwork.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sass/_aboutus-ourwork.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="265" column="52" selection-start-line="265" selection-start-column="52" selection-end-line="265" selection-end-column="52" />
+            <state relative-caret-position="420">
+              <caret line="249" column="17" lean-forward="true" selection-start-line="249" selection-start-column="17" selection-end-line="249" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -192,12 +190,12 @@
       <workItem from="1554788153223" duration="2605000" />
       <workItem from="1554866640316" duration="25331000" />
       <workItem from="1554978115908" duration="6555000" />
-      <workItem from="1555305130252" duration="8014000" />
+      <workItem from="1555305130252" duration="8951000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43960000" />
+    <option name="totallyTimeSpent" value="44897000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1928" y="-8" width="1936" height="1056" extended-state="6" />
@@ -444,8 +442,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sass/_aboutus-ourwork.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="265" column="52" selection-start-line="265" selection-start-column="52" selection-end-line="265" selection-end-column="52" />
+        <state relative-caret-position="420">
+          <caret line="249" column="17" lean-forward="true" selection-start-line="249" selection-start-column="17" selection-end-line="249" selection-end-column="17" />
         </state>
       </provider>
     </entry>
