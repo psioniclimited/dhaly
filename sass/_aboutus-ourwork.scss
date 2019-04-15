@@ -56,7 +56,7 @@ $general-red-color : #bb3939;
 }
 .dhaly-aboutus-img-holder {
   position: absolute;
-  z-index:0;
+  z-index: 1;
   width: 100%;
   height: 100%;
   background: transparent;
@@ -115,11 +115,11 @@ $general-red-color : #bb3939;
 
 .dhaly-ourwork-row {
   position: relative;
-  margin-top: 80px;
+  margin-top: 40px;
 }
 .dhaly-ourwork-header-col-12 {
   position: relative;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 .dhaly-ourwork-header-div {
   position: relative;
@@ -141,8 +141,8 @@ $general-red-color : #bb3939;
 
 @-webkit-keyframes backAndForth {
   0% {
-       top: 0px;
-     }
+    top: 0px;
+  }
   50% {
     top: 5px
   }
@@ -171,6 +171,12 @@ $general-red-color : #bb3939;
   100% {
     top: 0px;
   }
+}
+.dhaly-ourwork-logo-col02{
+  position: relative;
+  height: 200px;
+  flex: 0 0 20%;
+  max-width: 20.666667%;
 }
 .dhaly-ourwork-logo-holder {
   position: relative;
@@ -203,6 +209,20 @@ $general-red-color : #bb3939;
     opacity: 1;
   }
 }
+.dhaly-ourwork-logo-text {
+  @extend %paragraph-class;
+  font-size: 1.3rem !important;
+  text-align: center;
+  line-height: 18px;
+  letter-spacing: 1px !important;
+  color: #000;
+  font-weight: 600 !important;
+  margin-top: 10px;
+  @include transition(all .3s ease-in-out);
+}
+.dhaly-ourwork-logo-text:hover {
+  color: #bb3939;
+}
 @media (min-width: 1921px){
 
 }
@@ -215,8 +235,127 @@ $general-red-color : #bb3939;
 
 }
 @media (min-width: 768px) and (max-width: 1199px) {
-
+  #dhaly-aboutus-ourwork-section {
+    height: 100%;
+  }
+  #dhaly-aboutus-ourwork-section .dhaly-aboutus-ourwork-content-wrap .dhaly-aboutus-ourwork-container {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    max-width: 1199px;
+    text-align: center;
+  }
+  .dhaly-aboutus-row {
+    background: transparent;
+  }
+  .dhaly-aboutus-col06 {
+    position: relative;
+    padding: 0rem;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .dhaly-aboutus-img-col06 {
+    background: $general-red-color;
+    top: 1px;
+  }
+  .dhaly-aboutus-img-holder {
+    position: relative;
+    background: linear-gradient(180deg, #221f1f 50%, $general-red-color 50%);
+    img {
+      position: relative;
+      top: 0;
+      @include transform(translate(0%, 0%) scale(0.9));
+    }
+  }
+  .dhaly-aboutus-text-col06 {
+    background: $general-red-color;
+    text-align: center;
+    padding: 0px 20px 40px;
+  }
+  .dhaly-aboutus-text-holder {
+    padding: 2rem;
+  }
+  .dhaly-aboutus-text-header {
+    padding-bottom: 2rem;
+  }
+  .dhaly-ourwork-logo-holder img {
+    z-index: 0;
+    left: 50%;
+    @include transform(translateX(-50%));
+  }
+  .dhaly-ourwork-logo-col02 {
+    position: relative;
+    height: 320px;
+    flex: 0 0 33%;
+    max-width: 100%;
+    margin-bottom: 40px;
+  }
+  .dhaly-ourwork-logo-text {
+    position: relative;
+    bottom: 80px;
+  }
+  .dhaly-aboutus-background img {
+    width: 100%;
+    height: 80%;
+  }
 }
 @media (max-width: 767px) {
-
+  #dhaly-aboutus-ourwork-section {
+    height: 100%;
+  }
+  #dhaly-aboutus-ourwork-section .dhaly-aboutus-ourwork-content-wrap .dhaly-aboutus-ourwork-container {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    max-width: 767px;
+    text-align: center;
+  }
+  .dhaly-aboutus-row {
+    background: transparent;
+  }
+  .dhaly-aboutus-col06 {
+    position: relative;
+    padding: 0rem;
+  }
+  .dhaly-aboutus-img-col06 {
+    background: $general-red-color;
+    top: 1px;
+  }
+  .dhaly-aboutus-img-holder {
+    position: relative;
+    background: linear-gradient(180deg, #221f1f 50%, $general-red-color 50%);
+    img {
+      position: relative;
+      top: 0;
+      @include transform(translate(0%, 0%) scale(0.8));
+    }
+  }
+  .dhaly-aboutus-text-col06 {
+    background: $general-red-color;
+    text-align: center;
+    padding: 0px 20px 40px;
+  }
+  .dhaly-aboutus-text-holder {
+    padding: 2rem;
+  }
+  .dhaly-aboutus-text-header {
+    padding-bottom: 2rem;
+  }
+  .dhaly-ourwork-logo-holder img {
+    z-index: 0;
+    left: 50%;
+    @include transform(translateX(-50%));
+  }
+  .dhaly-ourwork-logo-col02 {
+    position: relative;
+    height: 320px;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .dhaly-ourwork-logo-text {
+    position: relative;
+    bottom: 80px;
+  }
+  .dhaly-aboutus-background img {
+    width: 100%;
+    height: 80%;
+  }
 }
