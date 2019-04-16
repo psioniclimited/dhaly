@@ -39,6 +39,18 @@ $general-red-color : #bb3939;
   cursor: pointer;
   text-align: center;
 }
+.dhaly-contact-us-paragraph-col-12 {
+  position: relative;
+  text-align: center;
+  margin-top: 30px;
+}
+.dhaly-contact-us-paragraph {
+  @extend %paragraph-class;
+  color: #000 !important;
+}
+.hidden-br {
+  display: none;
+}
 @media (min-width: 1921px){
 
 }
@@ -57,5 +69,8 @@ $general-red-color : #bb3939;
   .dhaly-our-clients-logo-col02 {
     position: relative;
     margin-bottom: 40px;
+  }
+  .hidden-br {
+    display: inherit;
   }
 }
