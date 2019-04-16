@@ -80,15 +80,5 @@ $(document).ready(function () {
 
 
     //Restoration Work
-    // var layer = $('.dhaly-restoration-work-background');
-    // var object = $('.dhaly-restoration-work-background-backimg');
-    //
-    // layer.mousemove(function(e){
-    //     var valueX = (e.pageX * -1 / 15);
-    //     var valueY = (e.pageY * -1 / 20);
-    //
-    //     object.css({
-    //        'transform':'translate3d('+valueX+'px,'+valueY+'px,0)'
-    //     });
-    // });
+
 });
