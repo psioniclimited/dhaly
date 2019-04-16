@@ -435,3 +435,9 @@ $general-color: #00ade3;
     transform-origin: center;
   }
 }
+
+@media (min-width: 768px) {
+  .nav-overlay ul li a {
+    float: right;
+  }
+}

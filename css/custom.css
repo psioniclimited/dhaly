@@ -40,6 +40,10 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Montserrat";
 }
 
+#gotoTop:hover {
+  background-color: #bb3939;
+}
+
 .dhaly-ourwork-header-div h1, .dhaly-aboutus-text-header {
   font-size: 42px;
   font-weight: 700 !important;
@@ -574,6 +578,11 @@ body:not(.dark) #header:not(.dark) #header-wrap:not(.dark) #primary-menu > div >
   .cool-link:hover::after {
     width: 0;
     transform-origin: center;
+  }
+}
+@media (min-width: 768px) {
+  .nav-overlay ul li a {
+    float: right;
   }
 }
 #dhaly-cover-section {

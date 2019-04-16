@@ -12,7 +12,7 @@ $paragraph-font-size-tab: 1.7rem;
 $paragraph-font-size-mobile: 1.5rem;
 
 $general-color: #00ade3;
-
+$general-red-color : #bb3939;
 
 @mixin clipPath($property) {
   -webkit-clip-path: $property;
@@ -72,7 +72,9 @@ p, a, div, span, div, .row {
 h1, h2, h3, h4, h5, h6{
   font-family: $header-font-stack;
 }
-
+#gotoTop:hover {
+  background-color: $general-red-color;
+}
 %header-class {
   font-size: $header-font-size-large;
   font-weight: 700 !important;
