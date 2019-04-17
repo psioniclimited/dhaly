@@ -80,5 +80,20 @@ $(document).ready(function () {
 
 
     //Restoration Work
+    // On Scroll Border Draw on products Paragraph Div
+    var controller = new ScrollMagic.Controller();
 
+    var clientScene = new ScrollMagic.Scene({
+        triggerElement: '#dhaly-our-clients-section',
+        duration: '100%',
+        triggerHook: 0.4
+    })
+        .setClassToggle('.st0, .st1, .st2', 'st66')
+        // .addIndicators({
+        //     name: 'Shudhu Shudhu',
+        //     colorTrigger: 'black',
+        //     colorStart: 'green',
+        //     colorEnd: 'red'
+        // })
+        .addTo(controller);
 });
