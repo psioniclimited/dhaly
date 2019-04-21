@@ -76,7 +76,8 @@ $(document).ready(function () {
     //Detect Window Size ends
 
     // Init lazy Load for Images
-    $('img.lazy').lazyload(); // End of Lazy Load
+    // $('img.lazy').lazyload();
+    // End of Lazy Load
 
 
     //Restoration Work
@@ -95,5 +96,13 @@ $(document).ready(function () {
         //     colorStart: 'green',
         //     colorEnd: 'red'
         // })
+        .addTo(controller);
+
+    var pinCoverScene = new ScrollMagic.Scene({
+        triggerElement: '#dhaly-cover-section',
+        triggerHook: 0,
+        duration: '80%'
+    })
+        .setPin('#dhaly-cover-section', {pushFollowers: false})
         .addTo(controller);
 });
