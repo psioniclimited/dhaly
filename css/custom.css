@@ -1215,6 +1215,7 @@ body:not(.dark) #header:not(.dark) #header-wrap:not(.dark) #primary-menu > div >
   width: 100%;
   height: 100vh;
   background: #221f1f;
+  z-index: 2;
 }
 #dhaly-aboutus-ourwork-section .dhaly-aboutus-ourwork-content-wrap {
   width: 100%;
