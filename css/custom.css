@@ -44,7 +44,7 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #bb3939;
 }
 
-.dhaly-ourwork-header-div h1, .dhaly-aboutus-text-header {
+.dhaly-work-with-us-content h1, .dhaly-ourwork-header-div h1, .dhaly-aboutus-text-header {
   font-size: 42px;
   font-weight: 700 !important;
   letter-spacing: 0px !important;
@@ -53,12 +53,33 @@ h1, h2, h3, h4, h5, h6 {
   max-width: 100%;
 }
 
-.dhaly-contact-us-paragraph, .dhaly-ourwork-logo-text, .dhaly-aboutus-text-content {
+.dhaly-work-with-us-content p, .dhaly-contact-us-paragraph, .dhaly-ourwork-logo-text, .dhaly-aboutus-text-content {
   font-size: 1.75rem;
   font-weight: 400 !important;
   line-height: 31px;
   letter-spacing: 0px !important;
   max-width: 100% !important;
+}
+
+.dhaly-work-with-us-content button {
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  white-space: nowrap;
+  margin: 5px;
+  margin-top: 15px;
+  margin-left: 0%;
+  padding: 0px 18px;
+  font-size: 12px;
+  height: 50px;
+  line-height: 40px;
+  background-color: #bb3939;
+  color: #FFF;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: none;
+  text-shadow: none;
 }
 
 .custom-loader {
@@ -180,6 +201,10 @@ h1, h2, h3, h4, h5, h6 {
   transform: scale(0.8);
 }
 
+.hamburger-icons-container.active {
+  right: 1rem;
+  top: 0rem;
+}
 .hamburger-icons-container.active .hamburger-icon-top img {
   -webkit-transform: rotate(-45deg) translate(-11px, 6px);
   -ms-transform: rotate(-45deg) translate(-11px, 6px);
@@ -609,7 +634,7 @@ body:not(.dark) #header:not(.dark) #header-wrap:not(.dark) #primary-menu > div >
 .cover-section-top-border {
   position: absolute;
   width: 0%;
-  height: 18px;
+  height: 10px;
   top: 0;
   left: 50%;
   background: #bb3939;
@@ -655,7 +680,7 @@ body:not(.dark) #header:not(.dark) #header-wrap:not(.dark) #primary-menu > div >
 }
 .cover-section-right-border {
   position: absolute;
-  width: 18px;
+  width: 10px;
   height: 0px;
   top: 0;
   right: 0;
@@ -1001,10 +1026,11 @@ body:not(.dark) #header:not(.dark) #header-wrap:not(.dark) #primary-menu > div >
   left: 10%;
   bottom: 0%;
   z-index: 3;
-  -webkit-transform: translate(0%, 0%);
-  -ms-transform: translate(0%, 0%);
-  -moz-transform: translate(0%, 0%);
-  transform: translate(0%, 0%);
+  transform-origin: bottom left;
+  -webkit-transform: translate(0%, 0%) scale(0.76);
+  -ms-transform: translate(0%, 0%) scale(0.76);
+  -moz-transform: translate(0%, 0%) scale(0.76);
+  transform: translate(0%, 0%) scale(0.76);
 }
 
 @-webkit-keyframes rightToLeft {
@@ -1140,15 +1166,6 @@ body:not(.dark) #header:not(.dark) #header-wrap:not(.dark) #primary-menu > div >
   }
 }
 @media (min-width: 1200px) and (max-width: 1799px) {
-  .cloudsBGD1 {
-    background-size: 70%;
-  }
-
-  .cloudsBGD2 {
-    top: 10%;
-    background-size: 70%;
-  }
-
   .dhaly-cover-gentleman img {
     height: 600px;
   }
@@ -1159,6 +1176,13 @@ body:not(.dark) #header:not(.dark) #header-wrap:not(.dark) #primary-menu > div >
 
   .dhaly-cover-rightmost-crane img {
     bottom: -4%;
+  }
+
+  .dhaly-cover-gentleman img {
+    -webkit-transform: translate(0%, 0%) scale(0.9);
+    -ms-transform: translate(0%, 0%) scale(0.9);
+    -moz-transform: translate(0%, 0%) scale(0.9);
+    transform: translate(0%, 0%) scale(0.9);
   }
 }
 @media (min-width: 768px) and (max-width: 1199px) {
@@ -1186,6 +1210,13 @@ body:not(.dark) #header:not(.dark) #header-wrap:not(.dark) #primary-menu > div >
     -o-animation: rightToLeft02 15s infinite;
     animation: rightToLeft02 15s infinite;
   }
+
+  .dhaly-cover-gentleman img {
+    -webkit-transform: translate(0%, 0%) scale(0.9);
+    -ms-transform: translate(0%, 0%) scale(0.9);
+    -moz-transform: translate(0%, 0%) scale(0.9);
+    transform: translate(0%, 0%) scale(0.9);
+  }
 }
 @media (max-width: 767px) {
   .cloudsBGDBox {
@@ -1208,6 +1239,13 @@ body:not(.dark) #header:not(.dark) #header-wrap:not(.dark) #primary-menu > div >
     -ms-animation: leftToRight 10s infinite;
     -o-animation: leftToRight 10s infinite;
     animation: leftToRight 10s infinite;
+  }
+
+  .dhaly-cover-gentleman img {
+    -webkit-transform: translate(0%, 0%) scale(0.9);
+    -ms-transform: translate(0%, 0%) scale(0.9);
+    -moz-transform: translate(0%, 0%) scale(0.9);
+    transform: translate(0%, 0%) scale(0.9);
   }
 }
 #dhaly-aboutus-ourwork-section {
@@ -1744,6 +1782,55 @@ body:not(.dark) #header:not(.dark) #header-wrap:not(.dark) #primary-menu > div >
 
   .hidden-br {
     display: inherit;
+  }
+}
+.dhaly-work-with-us-parallax-div {
+  height: 600px;
+}
+
+.dhaly-work-with-us-container {
+  padding: 0;
+}
+
+.dhaly-work-with-us-content {
+  position: relative;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.dhaly-work-with-us-content h1 {
+  color: #000 !important;
+  margin-bottom: 1.2rem;
+}
+.dhaly-work-with-us-content p {
+  padding: 0 2rem;
+  margin-bottom: 1.2rem;
+  color: #000 !important;
+  margin-top: 20px;
+}
+.dhaly-work-with-us-content button:hover {
+  color: #bb3939;
+  background: #fff !important;
+  border: 1px solid #bb3939;
+}
+
+@media (min-width: 1200px) and (max-width: 1799px) {
+  .dhaly-work-with-us-content p {
+    font-size: 1.8rem !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .dhaly-work-with-us-content p {
+    font-size: 1.7rem !important;
+  }
+}
+@media (max-width: 767px) {
+  .dhaly-work-with-us-content p {
+    font-size: 1.5rem !important;
   }
 }
 

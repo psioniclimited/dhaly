@@ -96,6 +96,26 @@ h1, h2, h3, h4, h5, h6{
   left: 50%;
   @include transform(translate(-50%, -50%));
 }
+%custom-button{
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  white-space: nowrap;
+  margin: 5px;
+  margin-top: 15px;
+  margin-left: 0%;
+  padding: 0px 18px;
+  font-size: 12px;
+  height: 50px;
+  line-height: 40px;
+  background-color: $general-red-color;
+  color: #FFF;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: none;
+  text-shadow: none;
+}
 
 .custom-loader{
   position: absolute;

@@ -39,7 +39,7 @@
 .cover-section-top-border {
   position: absolute;
   width: 0%;
-  height: 18px;
+  height: 10px;
   top: 0;
   left: 50%;
   background: #bb3939;
@@ -76,7 +76,7 @@
 
 .cover-section-right-border {
   position: absolute;
-  width: 18px;
+  width: 10px;
   height: 0px;
   top: 0;
   right: 0;
@@ -305,7 +305,8 @@
     left: 10%;
     bottom: 0%;
     z-index: 3;
-    @include transform(translate(0%, 0%));
+    transform-origin: bottom left;
+    @include transform(translate(0%, 0%) scale(0.76));
   }
 }
 @-webkit-keyframes rightToLeft {
@@ -451,13 +452,6 @@
 }
 
 @media (min-width: 1200px) and (max-width: 1799px) {
-  .cloudsBGD1 {
-    background-size: 70%;
-  }
-  .cloudsBGD2 {
-    top: 10%;
-    background-size: 70%;
-  }
   .dhaly-cover-gentleman img {
     height: 600px;
   }
@@ -466,6 +460,9 @@
   }
   .dhaly-cover-rightmost-crane img {
     bottom: -4%;
+  }
+  .dhaly-cover-gentleman img {
+    @include transform(translate(0%, 0%) scale(0.9));
   }
 }
 @media (min-width: 768px) and (max-width: 1199px) {
@@ -486,6 +483,9 @@
     right: -5%;
     @include animation(rightToLeft02 15s infinite);
   }
+  .dhaly-cover-gentleman img {
+    @include transform(translate(0%, 0%) scale(0.9));
+  }
 }
 @media (max-width: 767px) {
   .cloudsBGDBox {
@@ -503,5 +503,7 @@
   .dhaly-cover-lefttmost-crane img {
     @include animation(leftToRight 10s infinite);
   }
-
+  .dhaly-cover-gentleman img {
+    @include transform(translate(0%, 0%) scale(0.9));
+  }
 }

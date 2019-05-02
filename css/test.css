@@ -49,7 +49,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Circular Std Bold";
 }
 
-.transcom-distribution-our-depot-outlets-text-content h1, .transcom-foods-latest-update-carousel-header, .transcom-foods-latest-update-heading-block .transcom-foods-latest-update-header, .transcom-distribution-work-with-us-content h1, .transcom-distribution-our-leadership-header, .transcom-consumer-foods-product-col-big-h1, .transcom-distribution-heading-block h1 {
+.transcom-distribution-our-depot-outlets-text-content h1, .transcom-foods-latest-update-carousel-header, .transcom-foods-latest-update-heading-block .transcom-foods-latest-update-header, .dhaly-work-with-us-content h1, .transcom-distribution-our-leadership-header, .transcom-consumer-foods-product-col-big-h1, .transcom-distribution-heading-block h1 {
   font-size: 42px;
   font-weight: 700 !important;
   letter-spacing: 0px !important;
@@ -60,7 +60,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .transcom-footer-little-intro-left p, .transcom-footer-little-links-middle-left ul li p a, .transcom-footer-little--links-middle-right ul li p a,
 .transcom-footer-little-address-right ul li p a, .transcom-footer-little-links-middle-left ul li p, .transcom-footer-little--links-middle-right ul li p,
-.transcom-footer-little-address-right ul li p, .transcom-distribution-our-depot-outlets-text-content p, .transcom-foods-latest-update-carousel-paragraph, .transcom-foods-latest-update-heading-block .transcom-foods-latest-update-p, .transcom-distribution-work-with-us-content p, .transcom-distribution-our-leadership-heading-block .transcom-distribution-our-leadership-span, .transcom-consumer-foods-product-col-big-p, .transcom-distribution-heading-block .transcom-distribution-span {
+.transcom-footer-little-address-right ul li p, .transcom-distribution-our-depot-outlets-text-content p, .transcom-foods-latest-update-carousel-paragraph, .transcom-foods-latest-update-heading-block .transcom-foods-latest-update-p, .dhaly-work-with-us-content p, .transcom-distribution-our-leadership-heading-block .transcom-distribution-our-leadership-span, .transcom-consumer-foods-product-col-big-p, .transcom-distribution-heading-block .transcom-distribution-span {
   font-size: 18px;
   font-weight: 400 !important;
   line-height: 31px;
@@ -68,7 +68,7 @@ h1, h2, h3, h4, h5, h6 {
   max-width: 100% !important;
 }
 
-.transcom-distribution-work-with-us-content button, .button.transcom-consumer-foods-product-content-button, #transcom-distribution-intro-button {
+.dhaly-work-with-us-content button, .button.transcom-consumer-foods-product-content-button, #transcom-distribution-intro-button {
   position: relative;
   cursor: pointer;
   outline: none;
@@ -2368,15 +2368,15 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: calc(100% + 130px);
   }
 }
-.transcom-distribution-work-with-us-parallax-div {
+.dhaly-work-with-us-parallax-div {
   height: 100vh;
 }
 
-.transcom-distribution-work-with-us-container {
+.dhaly-work-with-us-container {
   padding: 0;
 }
 
-.transcom-distribution-work-with-us-content {
+.dhaly-work-with-us-content {
   position: relative;
   text-align: center;
   top: 50%;
@@ -2386,31 +2386,31 @@ h1, h2, h3, h4, h5, h6 {
   -moz-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
-.transcom-distribution-work-with-us-content h1 {
+.dhaly-work-with-us-content h1 {
   color: #fff !important;
   margin-bottom: 1.2rem;
 }
-.transcom-distribution-work-with-us-content p {
+.dhaly-work-with-us-content p {
   padding: 0 2rem;
   margin-bottom: 1.2rem;
 }
-.transcom-distribution-work-with-us-content button:hover {
+.dhaly-work-with-us-content button:hover {
   color: #00ade3;
   background: #fff !important;
 }
 
 @media (min-width: 1200px) and (max-width: 1799px) {
-  .transcom-distribution-work-with-us-content p {
+  .dhaly-work-with-us-content p {
     font-size: 1.8rem !important;
   }
 }
 @media (min-width: 768px) and (max-width: 1199px) {
-  .transcom-distribution-work-with-us-content p {
+  .dhaly-work-with-us-content p {
     font-size: 1.7rem !important;
   }
 }
 @media (max-width: 767px) {
-  .transcom-distribution-work-with-us-content p {
+  .dhaly-work-with-us-content p {
     font-size: 1.5rem !important;
   }
 }

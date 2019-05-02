@@ -81,6 +81,8 @@ $general-color: #00ade3;
   }
 }
 .hamburger-icons-container.active {
+  right: 1rem;
+  top: 0rem;
   .hamburger-icon-top {
     img {
       @include transform(rotate(-45deg) translate(-11px, 6px));

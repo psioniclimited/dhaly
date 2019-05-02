@@ -40,39 +40,7 @@ $(document).ready(function () {
     // if (screen.width <= 767) {
     //
     // }
-    $( window ).resize(function() {
-        $('.cloudsBGD1').css({
-            '-webkit-animation-name': 'no_animation',
-            '-moz-animation-name': 'no_animation',
-            'animation-name': 'no_animation'
-        });
 
-        $('.cloudsBGD2').css({
-            '-webkit-animation-name': 'no_animation',
-            '-moz-animation-name': 'no_animation',
-            'animation-name': 'no_animation'
-        });
-
-
-        setTimeout(function(){
-            $('.cloudsBGD1').css({
-                '-webkit-animation-name': 'cloudsBGD1',
-                '-moz-animation-name': 'cloudsBGD1',
-                'animation-name': 'cloudsBGD1'
-            });
-
-            $('.cloudsBGD2').css({
-                '-webkit-animation-name': 'cloudsBGD2',
-                '-moz-animation-name': 'cloudsBGD2',
-                'animation-name': 'cloudsBGD2'
-            });
-            $('.dhaly-cover-second-rightmost-crane, .dhaly-cover-rightmost-crane').css({
-                '-webkit-animation-name': 'cloudsBGD2',
-                '-moz-animation-name': 'cloudsBGD2',
-                'animation-name': 'cloudsBGD2'
-            });
-        },10);
-    });
     //Detect Window Size ends
 
     // Init lazy Load for Images
