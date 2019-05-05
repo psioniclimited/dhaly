@@ -34,12 +34,24 @@ $(document).ready(function () {
     });
     //Toggle Nav Overlay Ends
 
-    /*
-    Detect Window Size
-    */
-    // if (screen.width <= 767) {
-    //
-    // }
+    function afterWindowResize(){
+        if (screen.width <= 767) {
+            $('.visom-nav-link .cool-link').click(function () {
+                // console.log('click');
+                $('#toggle').trigger('click');
+            });
+        }
+    }
+    $( window ).resize(function() {
+        // console.log('resized');
+        afterWindowResize();
+    });
+    if (screen.width <= 767) {
+        $('.dhaly-nav-link .cool-link').click(function () {
+            // console.log('click');
+            $('#toggle').trigger('click');
+        });
+    }
 
     //Detect Window Size ends
 
@@ -73,4 +85,28 @@ $(document).ready(function () {
     })
         .setPin('#dhaly-cover-section', {pushFollowers: false})
         .addTo(controller);
+
+    // var tl4 = new TimelineMax({
+    //     repeat: -1,
+    //     yoyo:true
+    // });
+    //
+    // tl4.fromTo(".custom-st1", 8.4, {delay:0, scaleY:1, repeat:0, transformOrigin:"50% 0%"}, { scaleY:1, transformOrigin:"50% 0%", delay:0, ease: Sine.easeInOut, repeatDelay:0})
+    //     .to(".custom-st1", 12, {scaleY:2,delay:0, x:0, ease:Sine.easeInOut, yoyo:true, repeat:-1, repeatDelay:0})
+
+    var tl3 = new TimelineMax({
+        repeat: -1,
+        yoyo:true
+    });
+
+    tl3.fromTo(".custom-st2", 8.4, {delay:0, y:0, repeat:0, transformOrigin:"50% 50%"}, {y:110, transformOrigin:"50% 50%", delay:8.3, ease: Sine.easeInOut, repeatDelay:8.3})
+        .to(".custom-st2", 3.6, {delay:0, y:0, ease:Sine.easeInOut, yoyo:true, repeat:-1, repeatDelay:3.5})
+
+    var tl4 = new TimelineMax({
+        repeat: -1,
+        yoyo:true
+    });
+
+    tl4.fromTo(".custom-st1", 8.4, {delay:0, scaleY:1, repeat:0, transformOrigin:"50% 0%"}, { scaleY:1.5, transformOrigin:"50% 0%", delay:8.3, ease: Sine.easeInOut, repeatDelay:8.3})
+        .to(".custom-st1", 3.6, {scaleY:1,delay:0, x:0, ease:Sine.easeInOut, yoyo:true, repeat:-1, repeatDelay:3.5})
 });
